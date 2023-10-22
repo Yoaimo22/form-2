@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="form.css">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Urbanist:wght@600&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+
+</head>
+
+<body>
+    <div class="banner">
+      
+        <img src="img/computer.png"  class="layer-3">
+       
+        <img  src="img/light.png" class="layer-5">
+        <div class="layer-3">
+            <a href="#title">Isi Sekarang!</a>
+        </div>
+        </div>
+
+
+</div>
+
+    <div class="cursor"> </div>
+   
+        <!--Partticles js file!-->
+
+        <script type="text/javascript" src="cursor.js"></script>
+     
+
+     
+        <div class="container1">
+
+            <div class="header">
+                <h1 id="title">
+                    Pengaruh Smartphone Terhadap Interaksi Sosial Kelas Phase E2<br/> Tahun Ajaran 2022/2023
+                </h1>
+
+                <br/>
+                <p id="description2">
+                    Pilihlah salah satu jawaban pada pilihan jawaban dari pernyataan-pernyataan berikut yang sesuai dengan pendapat anda.<br/> Kriteria: <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp; Ya &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tidak
+                   
+                </p>
+
+                <main id="wrapper-main">
+
+                    <!--     light/dark mode container -->
+                    <div class="wrapper-color-switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <label for="dark-mode-toggle" class="color-switch">
+        <div class="color-switch-toggle"></div>
+      </label>
+                    </div>
+
+
+                    </header>
+            </div>
+
+        </div>
+
+        <form id="survey-form" action="connect.php" method="post">
+
+
+            <!-- Text section -->
+            <div class="form-group ">
+                <label for="name ">Name</label>
+                <input type="text " name="Name" id="name " class="formControl " placeholder="Enter your name " required>
+            </div>
+            <!-- end of text section -->
+            <div class="form-group ">
+                <label for="HP ">No Hp</label>
+                <input type="text " name="NoHP" id="hp " class="formControl " placeholder="Enter your number (Optional) " required>
+            </div>
+
+            <!-- Type Email section -->
+            <div class="form-group ">
+                <label for="email ">Email</label>
+                <input type="email " name="Email" id="email " class="formControl " placeholder="Enter your Email " required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group ">
+                <label for="class ">Class</label>
+                <input type="class " name="Class" id="class " class="formControl " placeholder="Enter your class " required>
+            </div>
+            <!-- end of Number section -->
+            <div class="form-group ">
+                <label for="gender ">Jenis Kelamin (Laki-laki/Perempuan)</label>
+                <input type="gender " name="Gender" id="gender " class="formControl " placeholder="Enter your Gender " required>
+            </div>
+
+            <!--  end of number section -->
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">Saya merasa gugup ketika tidak membawa Smartphone ke sekolah
+                </p>
+                <select required id="dropdown" name="quest" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                   
+                </select>
+            </div>
+            <!-- end of select section -->
+
+
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest2">Saya menggunakan smartphone karena merasa tidak percaya diri untuk bersosialisasi dengan dunia luar </p>
+                <select required id="dropdown" name="quest2" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest3">Smartphone sangat efektif dalam kegiatan pembelajaran di sekolah
+                </p>
+                <select required id="dropdown" name="quest3" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest4">Smatphone menjadi sarana mendapatkan informasi dan berbagi informasi
+                </p>
+                <select required id="dropdown" name="quest4" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest5">Saat saya menggunakan Smartphone, saya menjadi tidak peduli dengan lingkungn sekitar</p>
+                <select required id="dropdown" name="quest5" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest6">Saya merasa tidak fokus saat belajar disekolah karena ingin segera menggunakan smartphone </p>
+                <select required id="dropdown" name="quest6" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest7">Apakah anda pernah mencoba untuk mengurangi penggunaan smartphone?</p>
+                <select required id="dropdown" name="quest7" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest8">Saya selalu mengecek Smartphone setiap menit
+                </p>
+                <select required id="dropdown" name="quest8" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest9">Saya merasa aktif dalam kelas karena menggunakan smartphone </p>
+                <select required id="dropdown" name="quest9" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest10">Saya merasa menjadi mudah mendapat teman lewat media sosial
+                </p>
+                <select required id="dropdown" name="quest10" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest11">Saya sering menggunakan smartphone karena teman-teman saya bermain smartphone
+                </p>
+                <select required id="dropdown" name="quest11" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest12">Penggunaan smartphone membuat saya lebih tertutup dan tidak mau berinteraksi dengan orang lain
+                </p>
+                <select required id="dropdown" name="quest12" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest13">Saya lebih memilih bermain Smartphone daripada bermain bersama teman
+
+                </p>
+                <select required id="dropdown" name="quest13" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest14">Dengan menggunakan smartphone, saya menjadi lebih percya diri dalam mengungkapkan ekspresi diri
+
+                </p>
+                <select required id="dropdown" name="quest14" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+          
+            <div class="form-group">
+                <p id="quest15">Saya merasa tidak bisa hidup tanpa smartphone       
+                </p>
+                <select required id="dropdown" name="quest15" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+
+                <footer>
+                    <div class="footer-content ">
+                        <h3> Yoaimo22 </h3>
+                        <div class="body2 ">
+                            <div class="wrapper ">
+                                <div class="static-txt ">I'm a</div>
+                                <ul class="dynamic-txts ">
+
+                                    <li><span>Student</span></li>
+                                    <li><span>Web Developer</span></li>
+                                    <li><span>Content Creator</span></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="socials ">
+                            <li>
+                                <a href="https://github.com/Yoaimo22 "> <i class="fa fa-github "> </i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/rocloen/ "> <i class="fa fa-instagram "> </i></a>
+                            </li>
+                            <li>
+                                <a href="# "> <i class="fa fa-Tik-tok "> </i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@pesmobile_exe "> <i class="fa fa-whatsapp "> </i></a>
+                            </li>
+                            <li>
+                                <a href="# "> <i class="fa fa-linkedin-square "> </i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom ">
+                        <p>copyright <i class="fa fa-copyright"></i> Bartolomeus H.A 11 IPS 1</p>
+                    </div>
+            </div>
+    </div>
+
+    </footer>
+
+
+    </div>
+    <script type="text/javascript" src="dark.js"></script>
+    <script type="text/javascript" src="parallax.js"></script>
+
+   
+    </form>
+
+</body>
+
+</html>
